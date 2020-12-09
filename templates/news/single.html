@@ -1,0 +1,28 @@
+{% extends "layout.html" %}
+{% block content %}
+<section id="content-wrap" class="blog-single">
+   	<div class="row">
+   		<div class="col-twelve">
+
+   			<article class="format-standard">  
+
+   				<div class="content-media">
+						<div class="post-thumb">
+							<img src="{{ new.image.url }}"> 
+						</div>  
+					</div>
+
+					<div class="primary-content">
+
+						<h1 class="page-title">{{ new.baslik }} </h1>	
+
+						{{ new.icerik|safe}}
+
+						
+   	                </div> <!-- end row -->
+
+		
+
+   </section> <!-- end content -->
+
+{% endblock %}
